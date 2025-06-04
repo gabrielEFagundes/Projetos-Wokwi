@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Gabriel Ehrat",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -26.4,
+      "left": 309,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "bz1:2", "uno:5V", "red", [ "v163.2", "h-186" ] ],
+    [ "bz1:1", "uno:9", "blue", [ "h-48", "v-76.8", "h-125" ] ]
+  ],
+  "dependencies": {}
+}
